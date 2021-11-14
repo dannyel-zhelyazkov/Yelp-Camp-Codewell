@@ -1,0 +1,81 @@
+@import 'variables.module.scss';
+
+.container {
+	display: flex;
+	justify-content: center;
+	font-size: $normal;
+	width: 80%;
+	background-color: $background-color;
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+	.explore {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 5rem 10rem 10rem;
+		width: 100%;
+
+		.logo {
+			width: 12.5rem;
+			margin-top: 4rem;
+			margin-bottom: 12.8rem;
+		}
+
+		.header {
+			width: 80%;
+			font-size: $large;
+			font-weight: $bold;
+			margin-bottom: 0.8rem;
+			line-height: 61px;
+		}
+
+		.description {
+			width: 80%;
+			margin-bottom: 1.6rem;
+			color: $primary-font-color;
+			line-height: 150%;
+		}
+
+		.pros {
+			li {
+				display: flex;
+				align-items: center;
+				color: $primary-font-color;
+
+				&:not(:last-child) {
+					margin-bottom: 1.2rem;
+				}
+			}
+
+			li::before {
+				content: url('../public/svg/checkmark.svg');
+				margin-right: 0.8rem;
+			}
+		}
+
+		button {
+			margin: 2.4rem 0;
+		}
+
+		.partners {
+			p {
+				color: $primary-font-color;
+			}
+
+			.partnersList {
+				display: flex;
+			}
+		}
+	}
+
+	.hero {
+		width: 100%;
+		height: auto;
+		background-image: url('../public/images/hero.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}

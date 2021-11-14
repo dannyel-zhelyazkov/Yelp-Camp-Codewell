@@ -1,0 +1,14 @@
+@import 'variables.module.scss';
+
+.mainButton {
+	outline: none;
+	border: none;
+	width: fit-content;
+	color: $white-color;
+	background-color: $black-color;
+	padding: 1.8rem 2.4rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	font-weight: $semi-bold;
+}
