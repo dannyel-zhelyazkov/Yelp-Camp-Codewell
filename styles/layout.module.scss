@@ -1,7 +1,9 @@
+@import 'variables.module.scss';
+
 .layout {
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
+	@media (max-width: $large-devices) {
+		height: 100%;
+	}
 }

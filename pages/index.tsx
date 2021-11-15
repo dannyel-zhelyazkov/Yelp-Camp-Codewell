@@ -8,9 +8,10 @@ const Home: NextPage = () => {
 
 	return (
 		<div className={styles.container}>
+			<div className={styles.logo}>
+				<img src="svg/logo.svg" alt="Yelp Camp logo" />
+			</div>
 			<div className={styles.explore}>
-				<img src="svg/logo.svg" alt="Yelp Camp logo" className={styles.logo} />
-
 				<h1 className={styles.header}>Explore the best camps on Earth.</h1>
 				<p className={styles.description}>
 					YelpCamp is a curated list of the best camping spots on Earth.
